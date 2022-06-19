@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>export2</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/back-to-top-scroll-1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/back-to-top-scroll.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Bold-BS4-Animated-Back-To-Top.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cards.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="{% static 'css/Login-Form-Dark.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Pretty-Registration-Form.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Sidebar-Menu-1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Sidebar-Menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top bg-primary">
+        <div class="container-fluid"><img src="{% static 'img/mainicon.png' %}"  width="30px" height="30px" alt="10px"><a class="navbar-brand text-center" href="#" style="margin: 0px 0px;">HOSPITAL SYSTEM</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav text-light ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'homepage' %}">HOME</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'aboutpage' %}">ABOUT</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">LOGIN</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">CREATE ACCOUNT</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <section class="general-area-home">
+        <h1>Book your consultation with your doctor anywhere!</h1>
+        <h3>create an account and save your profile, then book your apppointment</h3>
+        <div class="row" id="row1">
+            <div class="col offset-lg-0">
+                <h2>New to this website..</h2><button class="btn btn-primary" type="button">Create Account</button></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="text-center">This website allows the you to book an appointment with the respective doctor whom he want to consult, you can view the old appointments, view the prescription, view the reports.<a data-bs-hover-animate="flash" href="#">For more details..</a></p>
+            </div>
+        </div>
+    </section>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/back-to-top-scroll.js' %}"></script>
+    <script src="{% static 'js/Bold-BS4-Animated-Back-To-Top.js' %}"></script>
+    <script src="{% static 'js/bs-init.js' %}"></script>
+    <script src="{% static 'js/Sidebar-Menu.js' %}"></script>
+</body>
+
+</html>
