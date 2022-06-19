@@ -4,3 +4,4 @@ An Enterprise Resource Planning (ERP) implementation for hospital management to 
 # Log_Updates:
 1) pavancs554 updated the first part of the project.
    It has working index and about page linked to back-end.
+   Dated: 19 June 2022.
