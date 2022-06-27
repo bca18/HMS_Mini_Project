@@ -1,0 +1,29 @@
+{% load static %}
+
+{% if error == "no" %}
+    {% if page == "doctor" %}
+    <script type="text/javascript">
+        alert('Logged In Sucessfully..........')
+        window.location = ('{% url 'home' %}')
+    </script>
+    {% endif %}
+    {% if page == "reception" %}
+    <script type="text/javascript">
+        alert('Logged In Sucessfully..........')
+        window.location = ('{% url 'home' %}')
+    </script>
+    {% endif %}
+    {% if page == "patient" %}
+    <script type="text/javascript">
+        alert('Logged In Sucessfully..........')
+        window.location = ('{% url 'home' %}')
+    </script>
+    {% endif %}
+{% endif %}
+
+{% if error == "yes" %}
+<script type="text/javascript">
+    alert('Invalid Credentials..........')
+    window.location=('{% url 'loginpage' %}')
+</script>
+{% endif %}
