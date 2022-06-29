@@ -7,4 +7,6 @@ An Enterprise Resource Planning (ERP) implementation for hospital management to 
  
 2) *bca18* updated the second part of the project. Intended objectives are working successfully.
    It has working createaccount page, login page, Patient-Doctor profiles, Make and view appointments. [27/06/2022]
+  
+3) *Soujanya-M-R* finished the project with final commit. [29/06/2022]
    
