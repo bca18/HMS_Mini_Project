@@ -112,19 +112,19 @@
         </div>
     </div>
     <div class="scroll-top-wrapper"><span class="scroll-top-inner"><i class="fa fa-arrow-circle-up"></i></span></div>
-    {% ifequal error "no" %}
+    {% if error == "no" %}
 <script type="text/javascript">
     alert('Receptionist saved Sucessfully..........')
     window.location = ('{% url 'adminaddReceptionist' %}')
 </script>
-{% endifequal%}
+{% endif %}
 
-{% ifequal error "yes" %}
+{% if error == "yes" %}
 <script type="text/javascript">
     /*alert('{{e}}')*/
     alert('Something went wrong!. Try Again...')
 </script>
-{% endifequal%}
+{% endif %}
     <div class="scroll-top-wrapper"><span class="scroll-top-inner"><i class="fa fa-arrow-circle-up"></i></span></div>
 <script src="{% static 'js/jquery.min.js' %}"></script>
 <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>

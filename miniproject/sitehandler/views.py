@@ -42,14 +42,14 @@ def loginpage(request):
 				login(request,user)
 				#error = "no"
 				g = request.user.groups.all()[0].name
-				'''if g == 'Doctor':
+				if g == 'Doctor':
 					page = "doctor"
 					d = {'error': error,'page':page}
 					return render(request,'doctorhome.html',d)
 				elif g == 'Receptionist':
 					page = "reception"
 					d = {'error': error,'page':page}
-					return render(request,'receptionhome.html',d)'''
+					return render(request,'receptionhome.html',d)
 				if g == 'Patient':
 					#page = "patient"
 					#d = {'error': error,'page':page}
@@ -310,7 +310,7 @@ def viewappointments(request):
 			#return render(request,'doctoraddprescription.html',p)
 		upcomming_appointments = Appointment.objects.filter(doctoremail=request.user,appointmentdate__gte=timezone.now(),status=True).order_by('appointmentdate')
 		#print("Upcomming Appointment",upcomming_appointments)
-		previous_appointments = Appointment.objects.filter(doctoremail=request.user,appointmentdate__lt=timezone.now()).order_by('-appointmentdate') | Appointment.objects.filter(doctoremail=requsest.user,status=False).order_by('-appointmentdate')
+		previous_appointments = Appointment.objects.filter(doctoremail=request.user,appointmentdate__lt=timezone.now()).order_by('-appointmentdate') | Appointment.objects.filter(doctoremail=request.user,status=False).order_by('-appointmentdate')
 		#print("Previous Appointment",previous_appointments)
 		d = { "upcomming_appointments" : upcomming_appointments, "previous_appointments" : previous_appointments }
 		return render(request,'doctorviewappointment.html',d)
