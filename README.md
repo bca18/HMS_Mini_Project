@@ -10,3 +10,5 @@ An Enterprise Resource Planning (ERP) implementation for hospital management to 
   
 3) *Soujanya-M-R* finished the final phase of the project which includes managing appointments and handling receptionist panel. [29/06/2022]
    
+#Webiste Deployed @Heroku:
+hms-mini-project.herokuapp.com
